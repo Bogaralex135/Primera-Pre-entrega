@@ -5,7 +5,7 @@
 ### Te muestra el precio subtotal y precio total con descuento si se aplico el codigo, los productos comprados y una confirmacion de compra.
 
 
-1. descuento(precio)
+#### descuento(precio)
 
   Aplica un descuento del 20% al precio si el usuario es un estudiante.
   De lo contrario, devuelve el precio original.
@@ -17,7 +17,7 @@
 
 
 
-2. mostrarCompra(precioTotal, precioSubtotal, producto)
+#### mostrarCompra(precioTotal, precioSubtotal, producto)
 
   Muestra un mensaje para confirmar la compra de un producto. Si el usuario confirma la compra, se mostrará un mensaje de alerta
   agradeciendo al usuario por la compra. Si el usuario cancela la compra, no sucederá nada. Si el usuario ingresa una opción 

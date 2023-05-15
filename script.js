@@ -1,5 +1,3 @@
-
-
 const pc1 = "Mini PC Intel NUC GAMER";
 const precioPc1 = 14999;
 const pc2 = "Computadora PRIDE GAMING Raptor";
@@ -8,7 +6,9 @@ const pc3 = "Computadora PRIDE GAMING DD-CHAN / EDICIÓN LIMITADA";
 const precioPc3 = 18999;
 
 function descuento(precio) {
-  const estudiante = prompt("20% de descuento a todos los estudiantes\n\n¿Eres estudiante? Si / No").toLowerCase();
+  const estudiante = prompt(
+    "20% de descuento a todos los estudiantes\n\n¿Eres estudiante? Si / No"
+  ).toLowerCase();
   if (estudiante === "si") {
     return precio * 0.8;
   } else if (estudiante === "no") {
@@ -30,25 +30,25 @@ function mostrarCompra(precioTotal, precioSubtotal, producto) {
   }
 }
 
-alert("Bienvenido a Computadoras.com\n\nPrimer Pre-entrega de CoderHouse Curso JavaScript Comisión 43095\nAlumno: Bogar Vazquez Mata");
+alert("Bienvenido a Computadoras.com");
 
 let opcion;
 do {
   opcion = parseInt(
     prompt(
-      `Que desea comprar?\n \n1-${PC1} $${precioPC1} \n2-${PC2} $${precioPC2} \n3-${PC3} $${precioPC3} \n4-Salir`
+      `Que desea comprar?\n \n1-${pc1} $${precioPc1} \n2-${pc2} $${precioPc2} \n3-${pc3} $${precioPc3} \n4-Salir`
     )
   );
 
   switch (opcion) {
     case 1:
-      mostrarCompra(descuento(precioPC1), precioPC1, PC1);
+      mostrarCompra(descuento(precioPc1), precioPc1, pc1);
       break;
     case 2:
-      mostrarCompra(descuento(precioPC2), precioPC2, PC2);
+      mostrarCompra(descuento(precioPc2), precioPc2, pc2);
       break;
     case 3:
-      mostrarCompra(descuento(precioPC3), precioPC3, PC3);
+      mostrarCompra(descuento(precioPc3), precioPc3, pc3);
       break;
     case 4:
       alert("Gracias por su compra");
