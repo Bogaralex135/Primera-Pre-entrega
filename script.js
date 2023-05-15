@@ -1,21 +1,17 @@
-// Primer Pre-entrega de CoderHouse Curso JavaScript Comisión 43095
-// Alumno: Bogar Vazquez Mata
-// Es un menú de compra de computadoras, tiene 3 secciones: eleccion, aplicacion de descuento y confirmacion de compra.
-// Tiene una seccion de descuentos, si eres estudiante se te aplica un 20% de descuento.
-// Te muestra el precio subtotal y precio total con descuento si se aplico el codigo, los productos comprados y una confirmacion de compra.
 
-const PC1 = "Mini PC Intel NUC GAMER";
-const precioPC1 = 14999;
-const PC2 = "Computadora PRIDE GAMING Raptor";
-const precioPC2 = 21999;
-const PC3 = "Computadora PRIDE GAMING DD-CHAN / EDICIÓN LIMITADA";
-const precioPC3 = 18999;
+
+const pc1 = "Mini PC Intel NUC GAMER";
+const precioPc1 = 14999;
+const pc2 = "Computadora PRIDE GAMING Raptor";
+const precioPc2 = 21999;
+const pc3 = "Computadora PRIDE GAMING DD-CHAN / EDICIÓN LIMITADA";
+const precioPc3 = 18999;
 
 function descuento(precio) {
   const estudiante = prompt("20% de descuento a todos los estudiantes\n\n¿Eres estudiante? Si / No").toLowerCase();
-  if (estudiante == "si") {
+  if (estudiante === "si") {
     return precio * 0.8;
-  } else if (estudiante == "no") {
+  } else if (estudiante === "no") {
     return precio;
   } else {
     alert("Opcion no valida");
