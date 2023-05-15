@@ -28,4 +28,4 @@
  * @param {string} producto - El nombre del producto que se está comprando.
  * @return {void} Esta función no devuelve nada.
 
-
+![Imagen de coderhouse](https://upload.wikimedia.org/wikipedia/commons/7/75/Logo_blackbg.png)
